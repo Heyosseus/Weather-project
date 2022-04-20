@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Bellefair', serif;
+    font-family: 'Open Sans', sans-serif;
+    background: #222;
+    background-image: url(' https://source.unsplash.com/1920x1000/? landscape ');
+    font-size: 120%;
+    
+    
+}
+
+.card {
+    background: #0a0a0ad5;
+    color: white;
+    padding: 2em;
+    border-radius: 35px;
+    width: 100%;
+    max-width: 430px;
+    margin: 0.5em;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.button {
+    border-radius: 50%;
+    border: none;
+    height: 45px;
+    width: 45px;
+    outline: none;
+    background: #7c74742b;
+    color: white;
+    margin: 0.5em; 
+    
+}
+
+.button:hover {
+    background: #8c8c8cb5;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.6em;
+    border-radius: 18px;
+    background: #8c8c8c5b;
+    color: white;
+    font-family: inherit;
+    font-size: 90%;
+    width: calc( 100% - 100px );
+}
+
+h1.temp {
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 5px ;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+img.icon {
+    height: 70px;
+}
+
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading::after{
+    visibility: visible;
+    content: "Loading..";
+    color: white;
+    position: absolute;
+    top: 0;
+}
